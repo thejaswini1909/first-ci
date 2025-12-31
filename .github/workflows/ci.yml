@@ -1,0 +1,17 @@
+name: My First CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get my code
+        uses: actions/checkout@v3
+
+      - name: Say hello
+        run: echo "My first CI is running 🎉"
