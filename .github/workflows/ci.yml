@@ -13,5 +13,5 @@ jobs:
       - name: Get my code
         uses: actions/checkout@v3
 
-      - name: Say hello
-        run: echo "My first CI is running 🎉"
+      - name: Force failure
+        run: exit 1
